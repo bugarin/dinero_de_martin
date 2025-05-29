@@ -32,7 +32,7 @@ class _DineroScreenState extends State<DineroScreen> {
         itemCount: dineros.length,
         itemBuilder: (context, index) {
           return Expanded(
-            child: InkWell(
+            child: GestureDetector(
               onTap: () {
                 Navigator.push(
                     context,

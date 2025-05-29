@@ -17,5 +17,46 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+  flutter_application_id: ^2.1.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.6
+  rename_app: ^1.6.3
+# flutter pub run flutter_application_id:main -f pubspec.yaml
+# dart run flutter_launcher_icons
+# dart run flutter_native_splash:create
+# dart run rename_app:main all="Dafi Gestión Cobranza"
+
+launcher_name:
+  default: "Dinero de Martín"
+
+flutter_application_id:
+  android:
+    id: "com.dafi.dinero"
+    name: "Dinero de Martín"
+  ios:
+    id: "com.dafi.dinero"
+    name: "Dinero de Martín"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#17CE7B"
+  image: assets/splash.png
+  color_dark: "#17CE7B"
+  image_dark: assets/splash.png
+
+  android_12:
+    image: assets/splash.png
+    icon_background_color: "#17CE7B"
+    image_dark: assets/splash.png
+    icon_background_color_dark: "#17CE7B"
+
+  web: false
+
 flutter:
   uses-material-design: true

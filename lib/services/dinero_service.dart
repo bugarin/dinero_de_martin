@@ -25,6 +25,7 @@ class DineroService {
       }
       return [];
     } catch (e) {
+      print(e);
       throw Exception('Falló la conexión con el servidor');
     }
   }
