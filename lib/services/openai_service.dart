@@ -2,8 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class OpenAIService {
-  static const String _apiKey =
-      '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';
+  static const String _apiKey = '';
   static const String _apiUrl = 'https://api.openai.com/v1/chat/completions';
 
   Future<String> getHistoriaDinero(String imageUrl) async {
